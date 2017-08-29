@@ -27,7 +27,8 @@ await page.goto('https://www.baidu.com', {waitUntil: 'networkidle'});
 // @see https://bugs.chromium.org/p/chromium/issues/detail?id=753118
 await page.pdf({
   path: 'hn.pdf',
-  format: 'letter'
+  format: 'A4',
+  printBackground: true
 });
 
 browser.close();
